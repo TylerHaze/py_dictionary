@@ -3,8 +3,10 @@ from difflib import get_close_matches
 
 data = json.load(open("data.json"))
 
+
 def getDef(word):
     word = word.lower()
+
     if word in data:
         return data[word]
     elif word.title() in data:
