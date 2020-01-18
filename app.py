@@ -6,8 +6,7 @@ def getDef(word):
     if word in data:
         return data[word]
     else:
-        print("Word not found")
-        exit()
+        return "Word not found."
 
 searchDef = input("What word would you like to define: ")
 definition = getDef(searchDef)
